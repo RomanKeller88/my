@@ -1,0 +1,160 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-size: 14px;
+    padding: 0 60px;
+    background: #1d1e1f;
+    color: white;
+    font-family: Graphik LC, sans-serif;
+    line-height: 19px;
+  }
+  @media (max-width: 1024px) {
+    body {
+      padding: 0 20px;
+    }
+  }
+  @media (max-width: 320px) {
+    body {
+      padding: 0 10px;
+    }
+  }
+  h1 {
+    font-family: Graphik LC Medium, sans-serif;
+    line-height: 33px;
+  }
+  .picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+  }
+  .picture-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .carousel {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .carousel-navigation {
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1d1e1f;
+    z-index: 10;
+  }
+  .carousel-navigation-arrows {
+    display: flex;
+    align-items: center;
+  }
+  .block_tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .block_tabs .block_input {
+    display: none;
+  }
+  .block_tabs .block_input:checked + .label {
+    background: #1d1f20;
+    color: white;
+    box-shadow: 0 2px 0 0 rgba(0, 255, 255, 100);
+  }
+  .block_tabs .block_input:checked + .label:after {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  .block_tabs .block_input:checked + .label + .tab_content {
+    display: block;
+  }
+  .block_tabs .label {
+    margin: 3px;
+    background: #1d1e1f;
+    padding: 10px 6px;
+    cursor: pointer;
+  }
+  @media (max-width: 900px) {
+    .block_tabs .label {
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5);
+    }
+  }
+  .block_tabs .label:hover {
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, .3);
+  }
+  .block_tabs .tab_content {
+    width: 100%;
+    order: 3;
+    display: none;
+  }
+  @media (max-width: 900px) {
+    .block_tabs .tab_content {
+      order: 0;
+    }
+    .block_tabs .label {
+      width: 100%;
+    }
+    .block_tabs .label:after {
+      content: '';
+      height: 24px;
+      width: 24px;
+      background-image: url(../img/arrow.svg);
+      transition: all linear 0.4s;
+      transform: rotate3d(0, 0, 0, 90deg);
+      float: right;
+    }
+  }
+  .arrow_left {
+    margin-right: 10px;
+    height: 20px;
+    width: 75px;
+    background: url("../img/arrow_left.svg") center /cover no-repeat;
+  }
+  .arrow_right {
+    height: 20px;
+    width: 75px;
+    background: url("../img/arrow_right.svg") center /cover no-repeat;
+  }
+  @font-face {
+    font-family: 'Graphik LC';
+    src: url('/fonts/Graphik-Regular-Web.ttf');
+    src: local('Graphik Regular'), local('Graphik-Regular'), url('/fonts/Graphik-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Graphik LC Medium';
+    src: url('/fonts/Graphik-Semibold-Web.ttf');
+    src: local('Graphik Semibold'), local('Graphik-Semibold'), url('/fonts/Graphik-Semibold-Web.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  .color {
+    color: #0ff;
+  }

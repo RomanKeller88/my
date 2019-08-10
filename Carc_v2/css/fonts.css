@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Graphik LC';
+    src: url('../fonts/Graphik-Regular-Web.ttf');
+    src: local('Graphik Regular'), local('Graphik-Regular'),
+        url('../fonts/Graphik-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LC Medium';
+    src: url('../fonts/Graphik-Semibold-Web.ttf');
+    src: local('Graphik Semibold'), local('Graphik-Semibold'),
+        url('../fonts/Graphik-Semibold-Web.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
